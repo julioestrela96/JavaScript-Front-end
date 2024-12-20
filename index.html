@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca de Informações do IP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Busca de Informações do IP</h1>
+    <p>Digite um IP para buscar informações ou deixe em branco para buscar seu IP atual:</p>
+    <input type="text" id="ipInput" placeholder="Ex: 8.8.8.8">
+    <button onclick="fetchIPInfo()">Obter Informações</button>
+    <p id="loading" style="display: none;">Carregando...</p>
+    <table id="ipInfoTable" style="display: none;">
+        <thead>
+            <tr>
+                <th>Campo</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody id="ipInfoBody"></tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
